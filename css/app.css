@@ -150,3 +150,8 @@ footer {
 .color-theme-black {
     color: black;
 }
+
+#welcome {
+    overflow: hidden;
+    height: 100vh;
+}
