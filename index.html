@@ -89,12 +89,17 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2" style="padding-top: 100px;">
                 <div class="hero-content text-center" style="padding: 30px 0; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); background-color: rgba(255, 255, 255, 0.5); color: #6c4f84; text-align: center;">
-                    <h1 style="font-family: 'Georgia', serif; font-size: 3em; letter-spacing: 4px; text-transform: uppercase; color: #4a2a61; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); margin-bottom: 20px;">
+                    <h1 style="font-family: 'Georgia', serif; font-size: 2em; letter-spacing: 4px; text-transform: uppercase; color: #4a2a61; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); margin-bottom: 10px;">
                         Priya & Priyank
                     </h1>
-                    <p style="font-family: 'Times New Roman', serif; font-size: 1.4em; color: #9b8cb1; letter-spacing: 1px; margin-top: 10px;">
+                    <p style="font-family: 'Times New Roman', serif; font-size: 1.4em; color: #9b8cb1; letter-spacing: 1px; ">
                         A Journey of Love, Laughter, and Happily Ever After
-                    </p>
+                    </p> 
+                    <p style="font-family: 'Times New Roman', serif; font-size: 1.8em; color: #9b8cb1; letter-spacing: 2px; ">
+                        #Priya(nk)
+                    </p> 
+           
+        
                 </div>
             </div>
         </div>
@@ -612,59 +617,88 @@ Let’s turn this day into a glowing celebration of love, laughter, and golden h
         </div>
     </div> -->
 </section>
-
-
-<section class="dark-section" id="tanggal" style="background-color: #000; color: #fff; padding: 50px 0;">
-    <div class="container">
+<section class="colorful-section" id="countdown-section" style="background-color: #f3e6ff; color: #4a1c75; padding: 50px 0;">
+    <div class="container" style="background-color: #ffffff; padding: 40px 60px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);">
         <div class="text-center">
-            <h1 class="font-esthetic py-3" style="font-size: 2rem; font-family: 'Arial', sans-serif; color: #fff;">Let the CountDown Begin</h1>
-            <div class="border rounded-pill shadow py-2 px-4 mx-2 mb-4" style="border: 2px solid #fff; background-color: rgba(255, 255, 255, 0.1);">
-                <!-- Ganti waktunya pada data-waktu sesuai format tersebut) -->
-                <div class="row justify-content-center" data-time="2025-09-15 16:00:00" id="count-down" style="text-align: center;">
-                    <div class="col-3 p-1">
-                        <h2 class="d-inline m-0 p-0" id="day" style="font-size: 2.5rem; font-weight: bold;">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline" style="font-size: 1rem;">Days</small>
+            <h1 class="font-esthetic py-3" style="font-size: 2.5rem; font-family: 'Arial', sans-serif; color: #4a1c75; letter-spacing: 2px;">The Wait is Almost Over!</h1>
+            
+            <div class="border rounded-pill shadow py-4 px-5 mx-2 mb-5" style="border: 2px solid #9c4f96; background-color: rgba(156, 79, 150, 0.1); display: flex; justify-content: center; align-items: center;">
+                <div class="countdown-timer" style="display: flex; gap: 30px; font-family: 'Arial', sans-serif;">
+                    <div class="time-block">
+                        <h2 id="days" style="font-size: 4rem; font-weight: bold; color: #9c4f96;">0</h2>
+                        <small style="font-size: 1.2rem; color: #4a1c75;">Days</small>
                     </div>
-                    <div class="col-3 p-1">
-                        <h2 class="d-inline m-0 p-0" id="hour" style="font-size: 2.5rem; font-weight: bold;">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline" style="font-size: 1rem;">Hours</small>
+                    <div class="time-block">
+                        <h2 id="hours" style="font-size: 4rem; font-weight: bold; color: #9c4f96;">0</h2>
+                        <small style="font-size: 1.2rem; color: #4a1c75;">Hours</small>
                     </div>
-                    <div class="col-3 p-1">
-                        <h2 class="d-inline m-0 p-0" id="minute" style="font-size: 2.5rem; font-weight: bold;">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline" style="font-size: 1rem;">Minutes</small>
+                    <div class="time-block">
+                        <h2 id="minutes" style="font-size: 4rem; font-weight: bold; color: #9c4f96;">0</h2>
+                        <small style="font-size: 1.2rem; color: #4a1c75;">Minutes</small>
                     </div>
-                    <div class="col-3 p-1">
-                        <h2 class="d-inline m-0 p-0" id="second" style="font-size: 2.5rem; font-weight: bold;">0</h2><small class="ms-1 me-0 my-0 p-0 d-inline" style="font-size: 1rem;">Seconds</small>
+                    <div class="time-block">
+                        <h2 id="seconds" style="font-size: 4rem; font-weight: bold; color: #9c4f96;">0</h2>
+                        <small style="font-size: 1.2rem; color: #4a1c75;">Seconds</small>
                     </div>
                 </div>
             </div>
 
-            <!-- Love animation -->
-            <div class="position-relative">
-                <div class="position-absolute" style="top: 0%; right: 10%;">
-                    <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="opacity-50" onload="util.animate(this, 3000, 'animate-love')" viewBox="0 0 16 16" style="opacity: 0.5;">
+            <!-- Animation -->
+            <div class="position-relative" style="position: relative; margin-top: -30px;">
+                <div class="position-absolute" style="top: 0%; right: 10%; opacity: 0.5;">
+                    <svg xmlns="https://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="animate-love" viewBox="0 0 16 16">
                         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
                     </svg>
                 </div>
             </div>
 
             <div class="overflow-x-hidden">
-                <div class="py-2" data-aos="fade-right" data-aos-duration="1500">
-                    <h1 class="font-esthetic" style="font-size: 2rem; font-family: 'Arial', sans-serif;">Time</h1>
-                    <p style="font-size: 1.2rem; color: #fff;">15th September, 4:00 PM </p>
-                </div>
+                <!-- <div class="py-3" data-aos="fade-right" data-aos-duration="1500">
+                    <h2 style="font-size: 1.5rem; font-family: 'Arial', sans-serif; color: #4a1c75;">Event Date:</h2>
+                    <p style="font-size: 1.2rem; color: #4a1c75;">15th September 2025, 4:00 PM</p>
+                </div> -->
 
-                <div class="py-2" data-aos="fade-left" data-aos-duration="1500">
-                    <h1 class="font-esthetic" style="font-size: 2rem; font-family: 'Arial', sans-serif;">Venue</h1>
-                    <p style="font-size: 1.2rem; color: #fff;">Pacific Inn 360 Degree Resort, Rishikesh</p>
+                <div class="py-3" data-aos="fade-left" data-aos-duration="1500">
+                    <h2 style="font-size: 1.5rem; font-family: 'Arial', sans-serif; color: #4a1c75;">Venue:</h2>
+                    <p style="font-size: 1.2rem; color: #4a1c75;">The Ocean Pearl Retreat, New Delhi</p>
                 </div>
             </div>
 
-            <div class="py-2" data-aos="fade-up" data-aos-duration="1500">
-                <a href="https://maps.app.goo.gl/N4JEFGkUf8PtSxew5" target="_blank" class="btn btn-outline-light btn-sm rounded-pill shadow-sm mb-2 px-3" style="border-color: #fff; color: #fff;">
-                    <i class="fa-solid fa-map-location-dot me-2" style="color: #fff;"></i>Google Maps
+            <div class="py-3" data-aos="fade-up" data-aos-duration="1500">
+                <a href="https://www.google.com/maps?rlz=1C5GCCM_en&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgwIARBFGDkYsQMYgAQyCggCEAAYsQMYgAQyCggDEAAYsQMYgAQyDQgEEC4YgwEYsQMYgAQyBwgFEAAYgAQyCggGEAAYsQMYgAQyCggHEC4YsQMYgAQyFggIEC4YrwEYxwEYgAQYmAUYmQUYngUyCggJEAAYsQMYgATSAQc5NzlqMGo3qAIAsAIA&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=Kfe1uxfRHw05MYnX65PyaAub&daddr=Chattarpur+Mandir+Rd,+Ansal+Villas,+Sat+Bari,+New+Delhi,+Delhi+110074" target="_blank" class="btn btn-outline-purple btn-sm rounded-pill shadow-sm mb-2 px-3" style="border-color: #9c4f96; color: #9c4f96;">
+                    <i class="fa-solid fa-map-location-dot me-2" style="color: #9c4f96;"></i>View on Google Maps
                 </a>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    // Countdown timer script
+    const countdownDate = new Date("2025-02-21T08:00:00").getTime();
+
+    const countdownFunction = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+            clearInterval(countdownFunction);
+            document.getElementById("countdown-timer").innerHTML = "Event Started!";
+        }
+    }, 1000);
+</script>
+
+
 
 
 
